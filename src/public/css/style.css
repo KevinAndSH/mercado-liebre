@@ -12,6 +12,7 @@ body{
 
 header{
   background-color: #EAC926;
+  text-align: center;
 }
 
 header .cuerpo{
@@ -25,6 +26,7 @@ footer{
 img{
   width: 360px;
 }
+
 
 .cuerpo{
   font-size: 12px;
@@ -46,13 +48,6 @@ img{
   font-size: 16px;
 }
 
-/* .burger-menu{
-  color: #fff;
-  background-color: #03264C;
-  text-align: center;
-  margin: auto;
-  padding: 200px;
-} */
 header .burger-menu{
   width: 30px;
   height: 30px;
@@ -67,4 +62,8 @@ header .burger-menu{
 
 footer .icon{
   color: #1259c3;
+}
+
+footer p{
+  margin: 10px;
 }
