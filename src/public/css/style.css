@@ -18,19 +18,32 @@ header{
 
 main{
   width: 90%;
-  margin: auto;
-  margin-top: 15px;
+  margin: 20px auto;
 }
 
 section{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 25px;
 }
 
 footer{
   text-align: center;
+  background-color: #aaa;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer div{
+  width: 30%;
+  margin: 20px auto;
+}
+
+footer h3{
+  width: 100%;
 }
 
 img{
@@ -47,9 +60,9 @@ a{
 }
 
 .top{
-  height: 40px;
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   margin: auto;
 }
 
@@ -87,13 +100,11 @@ a{
 }
 
 .precio{
-  display: inline-block;
   font-size: 18px;
   width: 30%;
 }
 
 .descuento{
-  display: inline-block;
   font-size: 16px;
   color: #39b54a;
   width: 40%;
@@ -105,12 +116,20 @@ a{
   margin-top: 10px;
 }
 
+.register-text{
+  text-align: center;
+}
+
 .site, .login{
   display: none;
 }
 
 .banner{
   width: 100%;
+}
+
+#foto{
+  display: none;
 }
 
 header .burger-menu{
@@ -138,7 +157,6 @@ header .burger-menu{
 
 .search button{
   padding-right: 1rem;
-  width: 15%;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
@@ -200,8 +218,13 @@ footer div i{
 }
 
 @media (min-width: 769px) {
+  .top{
+    margin-bottom: 15px;
+  }
+
   .logo{
     width: 220px;
+    height: 70px;
     margin: auto;
     margin-left: 0;
   }
@@ -229,5 +252,9 @@ footer div i{
 
   header .cuerpo{
     display: none;
+  }
+
+  main section article{
+    width: 250px;
   }
 }
