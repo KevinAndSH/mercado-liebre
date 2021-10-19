@@ -8,15 +8,25 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  margin: auto;
 }
 
 header{
   background-color: #EAC926;
-  text-align: center;
+  padding: 20px;
 }
 
-header .cuerpo{
-  text-align: center;
+main{
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 25px;
 }
 
 footer{
@@ -24,28 +34,75 @@ footer{
 }
 
 img{
-  width: 360px;
+  width: 100%;
 }
 
+ul{
+  list-style: none;
+}
+
+.top{
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.logo{
+  width: 50%;
+  height: 40px;
+}
+
+.search{
+  display: inline-flex;
+  width: 50%;
+  height: 40px;
+}
 
 .cuerpo{
+  text-align: center;
   font-size: 12px;
+  margin: 10px;
+  display: block;
+}
+
+.top .cuerpo{
+  display: none;
 }
 
 .titular{
   font-size: 24px;
 }
 
+.icon{
+  text-align: right;
+}
+
 .precio{
+  display: inline-block;
   font-size: 18px;
+  width: 30%;
 }
 
 .descuento{
+  display: inline-block;
   font-size: 16px;
+  color: #39b54a;
+  width: 40%;
 }
 
 .descripcion{
   font-size: 16px;
+  display: none;
+  margin-top: 10px;
+}
+
+.site, .login{
+  display: none;
+}
+
+.banner{
+  width: 100%;
 }
 
 header .burger-menu{
@@ -54,16 +111,106 @@ header .burger-menu{
   text-align: center;
   padding: 5px;
   background:rgb(99, 99, 216);
-  margin:auto;
+  margin: auto;
   margin-top: 10px;
   border-radius: 5px;
 }
 
-
-footer .icon{
-  color: #1259c3;
+.search input, button{
+  border: none;
+  background-color: #fff;
 }
 
-footer p{
-  margin: 10px;
+.search input{
+  padding: 1rem;
+  width: 85%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.search button{
+  padding-right: 1rem;
+  width: 15%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+main section article{
+  border-top: 1px solid #ebebeb;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 5%;
+}
+
+main section article:nth-of-type(n+2){
+  display: none;
+}
+
+section article i{
+  color: #39b54a;
+  display: flex;
+  font-size: 16​px​;
+  padding: ​5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+
+section article i:before{
+  position: relative;
+  top: 20%;
+  right: 10%;
+}
+
+footer div{
+  margin: 20px 5px;
+}
+
+footer div i{
+  color: #1259c3;
+  font-size: 30px;
+  margin-bottom: 10px ;
+}
+
+@media (min-width: 361px) {
+  .descripcion{
+    display: block;
+  }
+
+  .site, .login{
+    display: block;
+  }
+
+  header .burger-menu{
+    display: none;
+  }
+
+  main section article{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+  }
+
+  main section article:nth-of-type(2){
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo{
+    width: 220px;
+  }
+
+  main section article:nth-child(n+2){
+    display: block;
+  }
+
+  .top .cuerpo{
+    display: inline-block;
+  }
+
+  header .cuerpo{
+    display: none;
+  }
 }

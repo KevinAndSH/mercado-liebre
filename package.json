@@ -1,18 +1,25 @@
 {
-  "name": "intro",
-  "version": "0.1.0",
-  "main": "app.js",
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinAndSH/mercado-liebre.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "normalize.css": "^8.0.1"
+  "bugs": {
+    "url": "https://github.com/KevinAndSH/mercado-liebre/issues"
   },
-  "devDependencies": {},
-  "description": ""
+  "homepage": "https://github.com/KevinAndSH/mercado-liebre#readme"
 }
