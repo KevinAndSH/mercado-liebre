@@ -64,8 +64,7 @@ main h3{
 }
 
 main form{
-  width: 80%;
-  margin: 10px auto;
+  width: 100%;
   padding: 10px 0;
   background-color: #aae;
   display: flex;
@@ -321,6 +320,11 @@ footer div i:hover{
   footer div{
     width: 30%;
     padding: 0;
+  }
+
+  main form{
+    width: 80%;
+    margin: 10px auto;
   }
 
   .top{
