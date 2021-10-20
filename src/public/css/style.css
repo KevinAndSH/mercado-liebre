@@ -59,11 +59,6 @@ a{
   text-decoration: none;
 }
 
-main h3{
-  font-size: 3rem;
-  padding-bottom: 20px;
-}
-
 main form{
   width: 100%;
   padding: 10px 0;
@@ -203,8 +198,10 @@ main form.login input.boton{
   margin-top: 10px;
 }
 
-.register-text{
+.form-title{
   text-align: center;
+  font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 nav .site, nav .login{
@@ -326,6 +323,10 @@ footer div i:hover{
   main form{
     width: 80%;
     margin: 10px auto;
+  }
+
+  .form-title{
+    font-size: 3rem;
   }
 
   .top{
