@@ -37,8 +37,8 @@ footer{
 }
 
 footer div{
-  width: 30%;
   margin: 20px auto;
+  padding: 0 10%;
 }
 
 footer h3{
@@ -287,10 +287,6 @@ section article i:before{
   right: 10%;
 }
 
-footer div{
-  margin: 20px 5px;
-}
-
 footer div i{
   color: #1259c3;
   font-size: 30px;
@@ -322,6 +318,11 @@ footer div i:hover{
 
 /* Vista laptop */
 @media (min-width: 769px) {
+  footer div{
+    width: 30%;
+    padding: 0;
+  }
+
   .top{
     margin-bottom: 15px;
   }
