@@ -31,7 +31,6 @@ section{
 footer{
   text-align: center;
   background-color: #aaa;
-  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -59,16 +58,104 @@ a{
   text-decoration: none;
 }
 
+main h3{
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+main form{
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px 0;
+  background-color: #aae;
+  display: flex;
+  flex-flow: wrap column;
+}
+
+main form.login{
+  height: 350px;
+}
+
+main form div{
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+main form label{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+main form input{
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  width: 70%;
+  height: 2.5rem;
+}
+
+form div ul li{
+  padding-left: 15%;
+  display: flex;
+  align-items: center;
+}
+
+form div ul li input{
+  margin-right: 15px;
+}
+
+input[type="checkbox"], input[type="radio"]{
+  width: 20px;
+}
+
+.foto label{
+  cursor: pointer;
+}
+
+main form input.boton{
+  border: 1px solid #0022AA;
+  width: 70%;
+  height: 3rem;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+main form input.boton:hover{
+  border: none;
+  background-color: #0022AA;
+  color: white;
+}
+
+main form.login input.boton{
+  position: relative;
+  top: 40px;
+}
+
+#confirm{
+  margin-bottom: 30px;
+}
+
 .top{
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
   margin: auto;
 }
 
 .logo{
   width: 50%;
   height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 100%;
 }
 
 .search{
@@ -120,7 +207,7 @@ a{
   text-align: center;
 }
 
-.site, .login{
+nav .site, nav .login{
   display: none;
 }
 
@@ -128,9 +215,9 @@ a{
   width: 100%;
 }
 
-#foto{
+/* #foto{
   display: none;
-}
+} */
 
 header .burger-menu{
   width: 30px;
@@ -159,14 +246,22 @@ header .burger-menu{
   padding-right: 1rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
 }
 
 main section article{
   width: 300px;
+  height: 380px;
   border-top: 1px solid #ebebeb;
   padding: 20px;
   margin: 15px;
+  border: 1px solid rgb(100,100,100);
   border-radius: 5%;
+  box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+main section article:hover{
+  cursor: pointer;
 }
 
 section article i{
@@ -179,6 +274,11 @@ section article i{
   border: 1px solid #39b54a;
   background-color: #FFF;
   border-radius: 50%;
+  transition: all 0.2s;
+}
+
+section article i:hover{
+  transform: rotate(-90deg);
 }
 
 section article i:before{
@@ -194,15 +294,18 @@ footer div{
 footer div i{
   color: #1259c3;
   font-size: 30px;
-  margin-bottom: 10px ;
+  margin-bottom: 10px;
+  transition: all 0.2s;
 }
 
-@media (min-width: 361px) {
-  .descripcion{
-    display: block;
-  }
+footer div i:hover{
+  color: #fff;
+}
+  
 
-  .site, .login{
+/* Vista tablet */
+@media (min-width: 361px) {
+  nav .site, nav .login{
     display: flex;
     justify-content: center;
     margin: 10px auto;
@@ -212,11 +315,12 @@ footer div i{
     display: none;
   }
 
-  main section article{
-    box-shadow: 0px 0px 10px rgb(100,100,100);
+  article:hover .descripcion{
+    display: block;
   }
 }
 
+/* Vista laptop */
 @media (min-width: 769px) {
   .top{
     margin-bottom: 15px;
@@ -238,7 +342,7 @@ footer div i{
     justify-content: space-between;
   }
 
-  .site, .login{
+  nav .site, nav .login{
     display: inline-flex;
     margin: 15px 0 5px;
   }
@@ -246,7 +350,7 @@ footer div i{
   .top .cuerpo{
     display: inline-block;
     margin: auto;
-    margin-right: 10px;
+    margin-right: 10%;
     width: 235px;
   }
 
@@ -256,5 +360,13 @@ footer div i{
 
   main section article{
     width: 250px;
+    height: 330px;
+    box-shadow: none;
+    transition: all 0.1s;
+  }
+
+  main section article:hover{
+    border: none;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
   }
 }
