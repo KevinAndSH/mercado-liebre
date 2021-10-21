@@ -18,7 +18,7 @@ header{
 
 main{
   width: 90%;
-  margin: 30px auto;
+  margin: 10px auto;
   padding: 10px;
 }
 
@@ -148,7 +148,7 @@ main form.login input.boton{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 5px auto;
 }
 
 .logo{
@@ -212,6 +212,7 @@ main form.login input.boton{
   text-align: center;
   font-size: 2rem;
   padding-bottom: 20px;
+  margin: 15px;
 }
 
 nav .site, nav .login{
@@ -347,7 +348,7 @@ footer div i:hover{
   }
 
   .top{
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
   }
 
   .logo{
