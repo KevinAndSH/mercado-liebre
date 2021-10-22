@@ -209,7 +209,7 @@ main form.login input.boton{
 }
 
 .descripcion{
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
   margin-top: 10px;
 }
@@ -274,7 +274,7 @@ main section article{
   margin: 15px;
   border: 1px solid rgb(100,100,100);
   background-color: #fff;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 
 main section article:hover{
@@ -326,7 +326,7 @@ footer div i:hover{
 
   main section article{
     box-shadow: 0px 0px 10px rgb(100,100,100);
-    width: 40%;
+    width: 250px;
   }
 
   header .burger-menu{
