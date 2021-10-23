@@ -36,6 +36,8 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 10px;
+  color: #444;
 }
 
 footer div{
@@ -314,7 +316,7 @@ section article i:before{
 
 footer div i{
   color: #1259c3;
-  font-size: 30px;
+  font-size: 2em;
   margin-bottom: 10px;
   transition: all 0.2s;
 }
