@@ -331,7 +331,7 @@ footer div i:hover{
   
 
 /* Vista tablet */
-@media (min-width: 361px) {
+@media (min-width: 481px) {
   nav .site, nav .login{
     display: flex;
     justify-content: center;
