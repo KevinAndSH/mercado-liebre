@@ -127,7 +127,7 @@ input[type="checkbox"]:hover, input[type="radio"]:hover{
 }
 
 main form input.boton{
-  border: 1px solid #0022AA;
+  border: 2px solid #0022AA;
   width: 70%;
   height: 3rem;
   margin: 15px auto;
@@ -136,10 +136,18 @@ main form input.boton{
   transition: all 0.2s;
 }
 
+main form input.reset{
+  border-color: red;
+}
+
 main form input.boton:hover{
   border: none;
   background-color: #0022AA;
   color: #fff;
+}
+
+main form input.reset:hover{
+  background-color: red;
 }
 
 main form.login input.boton{
