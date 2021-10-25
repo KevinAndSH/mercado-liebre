@@ -271,7 +271,7 @@ header .burger-menu{
 
 .search input{
   padding: 1rem;
-  width: 85%;
+  width: 100%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
@@ -397,9 +397,7 @@ footer div i:hover{
 
   .top .cuerpo{
     display: block;
-    margin: auto;
-    margin-right: 20px;
-    width: 235px;
+    margin: 20px;
   }
 
   header .cuerpo{
