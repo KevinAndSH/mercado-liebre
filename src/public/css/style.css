@@ -140,9 +140,8 @@ input[type="checkbox"]:hover, input[type="radio"]:hover{
 main form input.boton{
   border: 2px solid #0022AA;
   width: 70%;
-  height: 3rem;
+  height: 3.3rem;
   margin: 15px auto;
-  padding: auto;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -152,7 +151,6 @@ main form input.reset{
 }
 
 main form input.boton:hover{
-  border: none;
   background-color: #0022AA;
   color: #fff;
 }
@@ -351,6 +349,17 @@ footer div i:hover{
     display: none;
   }
 
+  .logo{
+    width: 220px;
+    height: 70px;
+    margin: 0;
+    margin-right: 5vw;
+  }
+
+  .search{
+    flex-grow: 4;
+  }
+
   article .descripcion{
     color: inherit;
   }
@@ -376,17 +385,6 @@ footer div i:hover{
     margin: 0 auto 15px;
   }
 
-  .logo{
-    width: 220px;
-    height: 70px;
-    margin: 0;
-    margin-right: 5vw;
-  }
-
-  .search{
-    flex-grow: 4;
-  }
-
   nav{
     display: flex;
     justify-content: space-between;
@@ -400,6 +398,7 @@ footer div i:hover{
   .top .cuerpo{
     display: block;
     margin: auto;
+    margin-right: 20px;
     width: 235px;
   }
 
