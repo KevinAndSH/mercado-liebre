@@ -179,7 +179,8 @@ main form.login input.boton{
   width: 50%;
   height: 40px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .logo img{
@@ -274,6 +275,7 @@ header .burger-menu{
   width: 100%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+  outline: none;
 }
 
 .search button{
@@ -353,11 +355,11 @@ footer div i:hover{
     width: 220px;
     height: 70px;
     margin: 0;
-    margin-right: 5vw;
   }
 
   .search{
     flex-grow: 4;
+    margin: 0 5vw;
   }
 
   article .descripcion{
@@ -388,6 +390,8 @@ footer div i:hover{
   nav{
     display: flex;
     justify-content: space-between;
+    
+    margin: 0 15px;
   }
 
   nav .site, nav .login{
