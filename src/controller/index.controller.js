@@ -5,6 +5,10 @@ const path = require("path")
 const basedOn = require("../model/based-on.json")
 const onSale = require("../model/on-sale.json")
 
+const toThousand = n => {
+  n = n.toString()
+  
+}
 
 const controller = {
   home: (req, res) => {
