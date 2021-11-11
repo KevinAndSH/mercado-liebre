@@ -13,129 +13,44 @@
       <section>
         <h2 class="titular">Basado en tu última visita</h2>
 
-        <article>
-          <img src="./images/img-cafetera-moulinex.jpg">
+        <% basedOn.forEach(article => { %>
+          <article>
+            <img src= <%= "/img/" + article.img %>  >
+  
+            <div class="icon">
+              <i class="fas fa-truck"></i>
+            </div>
+  
+            <p>
+              <span class="precio">$ <%= article.price %> </span>
+              <span class="descuento"><%= article.off %>%&nbspoff</span>
+            </p>
+  
+            <h3 class="descripcion"> <%= article.name %> </h3>
+          </article>
+        <% }) %>
 
-          <div class="icon">
-            <i class="fas fa-truck"></i>
-          </div>
-
-          <p>
-            <span class="precio">$6.770</span>
-            <span class="descuento">40%&nbspoff</span>
-          </p>
-
-          <h3 class="descripcion">Cafetera Moulinex</h3>
-        </article>
-
-        <article>
-          <img src="./images/img-macbook-pro-2019.jpg">
-
-          <div class="icon">
-            <i class="fas fa-truck"></i>
-          </div>
-
-          <p>
-            <span class="precio">$230.000</span>
-            <span class="descuento">20%&nbspoff</span>
-          </p>
-
-          <h3 class="descripcion">MacBook Pro 2019</h3>
-        </article>
-
-        <article>
-          <img src="./images/img-samsung-galaxy-s10.jpg">
-
-          <div class="icon">
-            <i class="fas fa-truck"></i>
-          </div>
-
-          <p>
-            <span class="precio">$70.500</span>
-            <span class="descuento">10%&nbspoff</span>
-          </p>
-
-          <h3 class="descripcion">Samsung Galaxy S10</h3>
-        </article>
-
-        <article>
-          <img src="./images/img-tv-samsung-smart.jpg">
-
-          <div class="icon">
-            <i class="fas fa-truck"></i>
-          </div>
-
-          <p>
-            <span class="precio">$23.200</span>
-            <span class="descuento">5%&nbspoff</span>
-          </p>
-
-          <h3 class="descripcion">SmartTV Samsung 43"</h3>
-        </article>
       </section>
 
       <section>
         <h2 class="titular">Ofertas</h2>
 
-        <article>
-          <img src="./images/img-cafetera-moulinex.jpg">
-
-          <div class="icon">
-            <i class="fas fa-truck"></i>
-          </div>
-
-          <p>
-            <span class="precio">$6.770</span>
-            <span class="descuento">40%&nbspoff</span>
-          </p>
-
-          <h3 class="descripcion">Cafetera Moulinex</h3>
-        </article>
-
-        <article>
-          <img src="./images/img-macbook-pro-2019.jpg">
-
-          <div class="icon">
-            <i class="fas fa-truck"></i>
-          </div>
-
-          <p>
-            <span class="precio">$230.000</span>
-            <span class="descuento">20%&nbspoff</span>
-          </p>
-
-          <h3 class="descripcion">MacBook Pro 2019</h3>
-        </article>
-
-        <article>
-          <img src="./images/img-samsung-galaxy-s10.jpg">
-
-          <div class="icon">
-            <i class="fas fa-truck"></i>
-          </div>
-
-          <p>
-            <span class="precio">$70.500</span>
-            <span class="descuento">10%&nbspoff</span>
-          </p>
-
-          <h3 class="descripcion">Samsung Galaxy S10</h3>
-        </article>
-
-        <article>
-          <img src="./images/img-tv-samsung-smart.jpg">
-
-          <div class="icon">
-            <i class="fas fa-truck"></i>
-          </div>
-
-          <p>
-            <span class="precio">$23.200</span>
-            <span class="descuento">5%&nbspoff</span>
-          </p>
-
-          <h3 class="descripcion">SmartTV Samsung 43"</h3>
-        </article>
+        <% onSale.forEach(article => { %>
+          <article>
+            <img src= <%= "/img/" + article.img %>  >
+  
+            <div class="icon">
+              <i class="fas fa-truck"></i>
+            </div>
+  
+            <p>
+              <span class="precio">$ <%= article.price %> </span>
+              <span class="descuento"><%= article.off %>%&nbspoff</span>
+            </p>
+  
+            <h3 class="descripcion"> <%= article.name %> </h3>
+          </article>
+        <% }) %>
       </section>
     </main>
 
